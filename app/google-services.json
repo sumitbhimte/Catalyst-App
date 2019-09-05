@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "29029494967",
+    "firebase_url": "https://catalysts-503e5.firebaseio.com",
+    "project_id": "catalysts-503e5",
+    "storage_bucket": "catalysts-503e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29029494967:android:4afe14802bfd1f9f",
+        "android_client_info": {
+          "package_name": "com.example.catalyst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29029494967-alg8cqj2el9g3tmbd6u4ug4cou4hggsh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaXhxtJeG8tNMZf858VJKzh43czkQXwWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29029494967-alg8cqj2el9g3tmbd6u4ug4cou4hggsh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
