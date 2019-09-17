@@ -18,19 +18,15 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
-import static android.accounts.AccountManager.KEY_PASSWORD;
-import androidx.annotation.NonNull;
-import android.os.Handler;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private EditText username_id, pass_id;
     private Button sign_button_id, reg_button_id;
     //private TextView forgot_pass;
-    private String username, password;
     private static final String KEY_EMPTY = "";
     private static final String KEY_STATUS = "status";
-    private static final String KEY_MESSAGE = "message";
+
+    //To store the username and password of the user
     private  String USERNAME = "username";
     private  String PASSWORD = "password";
     ProgressDialog dialog;
@@ -50,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 //direct gone to dashboard by this intent
-                           // Intent i = new Intent(MainActivity.this,Dashboard_page.class);
-                           //startActivity(i);
+                           // Intent intent = new Intent(MainActivity.this,StreamSelect.class);
+                          //  startActivity(intent);
                 setViews();
                 if (validateInputs()) {
                     login();
@@ -70,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         /*forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, Dashboard_page.class);
+                Intent i = new Intent(MainActivity.this, StreamSelect.class);
                 startActivity(i);
             }
         });
@@ -94,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private boolean validateInputs() {
+        //checks weather the username nd password string in null
+        //if null then print the toast
+
         if (KEY_EMPTY.equals(USERNAME)) {
             username_id.setError("Username cannot be empty");
             username_id.requestFocus();
@@ -136,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                             //Check if user got logged in successfully
 
                             if (response.getInt(KEY_STATUS) == 1) {
-                                Intent i = new Intent(MainActivity.this,Dashboard_page.class);
-                                startActivity(i);
+                                Intent intent = new Intent(MainActivity.this, StreamSelect.class);
+                                startActivity(intent);
 
                             } else {
                                Toast.makeText(getApplicationContext(),

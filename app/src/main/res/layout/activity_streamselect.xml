@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".Dashboard_page">
+    tools:context=".StreamSelect">
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spinner"
         android:layout_width="229dp"
         android:layout_height="59dp"
         android:entries="@array/stream_arrays"
@@ -23,6 +23,8 @@
         app:layout_constraintVertical_bias="0.59" />
 
     <Button
+
+        android:background="@drawable/capsule"
         android:id="@+id/btnSubmit"
         android:layout_width="118dp"
         android:layout_height="59dp"
@@ -31,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
         app:layout_constraintVertical_bias="0.342" />
 
     <TextView
@@ -41,12 +43,14 @@
         android:layout_marginTop="24dp"
         android:text="Enter your 12th Percentage "
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.071"
+        />
 
     <EditText
         android:id="@+id/editText2"
@@ -81,7 +85,7 @@
         android:layout_height="50dp"
         android:text="Select your UG Stream"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.314"
         app:layout_constraintStart_toStartOf="parent"

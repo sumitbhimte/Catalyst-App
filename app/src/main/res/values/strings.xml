@@ -8,12 +8,12 @@
 
     <string name="stream_prompt">Choose a Stream</string>
 
-        <string-array name="stream_arrays">
-            <item>Engineering</item>
-            <item>B.com</item>
-            <item>BA</item>
+    <string-array name="stream_arrays">
+        <item>Engineering</item>
+        <item>B.com</item>
+        <item>BA</item>
 
-         </string-array>
+    </string-array>
 
 </resources>
 
