@@ -6,7 +6,7 @@ public class College {
     private String college_name;
     private String college_website;
     private String college_location;
-    private String college_course;
+    private String college_cet_score;
     private String image;
 
     public College(int college_code, String college_name, String college_website, String college_location, String college_course, String image) {
@@ -14,7 +14,7 @@ public class College {
         this.college_name = college_name;
         this.college_website = college_website;
         this.college_location = college_location;
-        this.college_course = college_course;
+        this.college_cet_score = college_course;
         this.image = image;
     }
 
@@ -34,8 +34,8 @@ public class College {
         return college_location;
     }
 
-    public String getCollege_course() {
-        return college_course;
+    public String getCollege_cet_score() {
+        return college_cet_score;
     }
 
     public String getImage() {

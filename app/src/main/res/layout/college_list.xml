@@ -34,7 +34,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textViewCourse"
+                android:id="@+id/textViewCetScore"
                 android:layout_width="140dp"
                 android:layout_height="46dp"
                 android:layout_below="@id/textViewName"
@@ -65,7 +65,7 @@
                 android:id="@+id/textViewWebsite"
                 android:layout_width="259dp"
                 android:layout_height="61dp"
-                android:layout_below="@+id/textViewCourse"
+                android:layout_below="@+id/textViewCetScore"
                 android:layout_marginLeft="-5dp"
                 android:layout_marginTop="11dp"
                 android:layout_toRightOf="@id/imageView"
@@ -84,7 +84,7 @@
                 android:layout_alignBottom="@+id/textViewWebsite"
                 android:layout_marginStart="3dp"
                 android:layout_marginBottom="66dp"
-                android:layout_toEndOf="@+id/textViewCourse"
+                android:layout_toEndOf="@+id/textViewCetScore"
                 android:text="college_code"
                 android:textSize="24sp" />
 

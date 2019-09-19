@@ -32,6 +32,7 @@ public class Stream_display extends AppCompatActivity {
 
     //the recyclerview
     RecyclerView recyclerView;
+
     String str;
 
     @Override
@@ -51,7 +52,6 @@ public class Stream_display extends AppCompatActivity {
         //str = i.getStringExtra("stream");
         //Toast.makeText(this,str,Toast.LENGTH_LONG).show();
 //****************
-
 
         //this method will fetch and parse json
         //to display it in recycler view
@@ -87,7 +87,7 @@ public class Stream_display extends AppCompatActivity {
                                         product.getString("college_name"),
                                         product.getString("college_website"),
                                         product.getString("college_location"),
-                                        product.getString("college_course"),
+                                        product.getString("college_cet_score"),
                                         product.getString("image")
                                 ));
                             }
@@ -108,7 +108,7 @@ public class Stream_display extends AppCompatActivity {
                     }
                 });
 
-        //adding our stringrequest to queue
+        //adding our string request to queue
 
         Volley.newRequestQueue(this).add(stringRequest);
     }

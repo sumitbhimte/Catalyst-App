@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /*forgot_pass.setOnClickListener(new View.OnClickListener() {
+        /*
+        forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, StreamSelect.class);
@@ -87,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
        // forgot_pass = findViewById(R.id.main_forgot_pass);
     }
-
 
     private boolean validateInputs() {
         //checks weather the username nd password string in null
@@ -163,3 +163,5 @@ public class MainActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
        }
 }
+
+

@@ -9,9 +9,10 @@
     <string name="stream_prompt">Choose a Stream</string>
 
     <string-array name="stream_arrays">
-        <item>Engineering</item>
-        <item>B.com</item>
-        <item>BA</item>
+        <item>MH-CET</item>
+        <item>JEE-MAIN</item>
+        <item>NEET</item>
+        <item>JEE-ADVANCE</item>
 
     </string-array>
 

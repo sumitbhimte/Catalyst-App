@@ -41,7 +41,7 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.ProductV
                 .into(holder.imageView);
 
         holder.textViewName.setText(college.getCollege_name());
-        holder.textViewCourse.setText(college.getCollege_course());
+        holder.textViewCetScore.setText(college.getCollege_cet_score());
         holder.textViewLoc.setText(String.valueOf(college.getCollege_location()));
         holder.textViewWebsite.setText(String.valueOf(college.getCollege_website()));
         holder.textViewCode.setText(String.valueOf(college.getCollege_code()));
@@ -56,14 +56,14 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.ProductV
     class ProductViewHolder extends RecyclerView.ViewHolder {
 
 
-        TextView  textViewName,textViewCourse, textViewLoc, textViewCode,textViewWebsite;
+        TextView  textViewName,textViewCetScore, textViewLoc, textViewCode,textViewWebsite;
         ImageView imageView;
 
         public ProductViewHolder(View itemView) {
             super(itemView);
 
             textViewName = itemView.findViewById(R.id.textViewName);
-            textViewCourse = itemView.findViewById(R.id.textViewCourse);
+            textViewCetScore = itemView.findViewById(R.id.textViewCetScore);
             textViewLoc = itemView.findViewById(R.id.textViewLoc);
             textViewWebsite = itemView.findViewById(R.id.textViewWebsite);
             textViewCode = itemView.findViewById(R.id.textViewCode);
