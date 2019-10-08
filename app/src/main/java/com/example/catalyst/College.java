@@ -34,9 +34,9 @@ public class College {
         return college_location;
     }
 
-    public String getCollege_cet_score() {
-        return college_cet_score;
-    }
+    //public String getCollege_cet_score() {
+    //    return college_cet_score;
+    //}
 
     public String getImage() {
         return image;

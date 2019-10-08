@@ -33,7 +33,7 @@ public class Stream_display extends AppCompatActivity {
     //the recyclerview
     RecyclerView recyclerView;
 
-    String str;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

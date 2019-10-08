@@ -8,6 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.android.volley.Request;
@@ -22,7 +23,8 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity {
     private EditText username_id, pass_id;
     private Button sign_button_id, reg_button_id;
-    //private TextView forgot_pass;
+
+    private TextView adminLogin;
     private static final String KEY_EMPTY = "";
     private static final String KEY_STATUS = "status";
 
@@ -63,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        adminLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,AdminLogin.class);
+                startActivity(intent);
+            }
+        });
+
+
         /*
         forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
         sign_button_id = findViewById(R.id.main_sign_in_button);
 
         reg_button_id = findViewById(R.id.main_register_button);
+
+        adminLogin =findViewById(R.id.txtAdminLogin);
+
 
        // forgot_pass = findViewById(R.id.main_forgot_pass);
     }

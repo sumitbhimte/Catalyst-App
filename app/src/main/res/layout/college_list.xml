@@ -13,7 +13,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#BBC1E6"
+            android:background="#728FCE"
             android:padding="8dp">
 
             <ImageView
@@ -41,7 +41,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="1dp"
                 android:layout_toRightOf="@id/imageView"
-                android:text="College_course"
+                android:text="       code :"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textSize="24sp" />
 

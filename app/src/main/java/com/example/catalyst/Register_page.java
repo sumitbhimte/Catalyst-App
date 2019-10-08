@@ -20,21 +20,19 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 import android.widget.Toast;
-import android.widget.TextView;
-import android.os.Bundle;
-import com.android.volley.AuthFailureError;
-import java.util.HashMap;
-import java.util.Map;
-import androidx.appcompat.app.AppCompatActivity;
-import com.android.volley.toolbox.StringRequest;
+
 
 public class Register_page extends AppCompatActivity {
 
-    private EditText username_id, user_fullName, user_pass_id;
+    private EditText username_id, user_fullName, user_pass_id,user_email,user_mobile_no;
     private Button submit_button;
     //private TextView login;
     private String userName,fullName, password;
+    private String email;
+
+    private String mobileNo;
     private static final String KEY_EMPTY = "";
+
 
     ProgressDialog dialog;
 
@@ -50,6 +48,8 @@ public class Register_page extends AppCompatActivity {
         username_id = findViewById(R.id.register_username);
         user_pass_id = findViewById(R.id.register_password);
         user_fullName = findViewById(R.id.register_fullName);
+        user_email = findViewById(R.id.etEmail);
+        user_mobile_no = findViewById(R.id.etMobileNo);
         submit_button = findViewById(R.id.register_submit);
 
         dialog = new ProgressDialog(this);
@@ -83,6 +83,10 @@ public class Register_page extends AppCompatActivity {
             userName = username_id.getText().toString().trim();
             password = user_pass_id.getText().toString().trim();
             fullName = user_fullName.getText().toString().trim();
+            email = user_email.getText().toString().trim();
+
+            mobileNo = user_mobile_no.getText().toString().trim();
+
 
             dialog.setMessage("Registering the user...");
             dialog.show();
@@ -93,7 +97,11 @@ public class Register_page extends AppCompatActivity {
                 request.put("username", userName);
                 request.put("password",password);
                 request.put("full_name",fullName);
-              } catch (JSONException e) {
+                request.put("email",email);
+                request.put("mobileNo",mobileNo);
+
+
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
 
@@ -104,7 +112,6 @@ public class Register_page extends AppCompatActivity {
                             dialog.dismiss();
                             try {
                                 if (response.getInt("status") == 1) {
-                                //    Toast.makeText(getApplicationContext(),response.getString("message"),Toast.LENGTH_SHORT).show();
                                     Toast.makeText(getApplicationContext(),
                                             response.getString("message"), Toast.LENGTH_SHORT).show();
                                     Intent i = new Intent(Register_page.this,MainActivity.class);
@@ -139,12 +146,6 @@ public class Register_page extends AppCompatActivity {
         }
 
     }
-
-
-    /*public void gotoLogin(View view) {
-        Intent intent = new Intent(Register_page.this, MainActivity.class);
-        startActivity(intent);
-    }*/
 
 
     public boolean haveNetwork() {
@@ -183,6 +184,19 @@ public class Register_page extends AppCompatActivity {
             user_fullName.requestFocus();
             return false;
         }
+
+        if (KEY_EMPTY.equals(email)) {
+            user_email.setError("Email cannot be empty");
+            user_email.requestFocus();
+            return false;
+        }
+        /*if (KEY_EMPTY.equals(mobileNo)) {
+            user_mobile_no.setError("mob no cannot be empty");
+            user_mobile_no.requestFocus();
+            return false;
+        }*/
+
         return true;
+
     }
 }

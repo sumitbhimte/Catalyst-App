@@ -1,18 +1,44 @@
 <resources>
-    <string name="app_name">Catalyst</string>
+    <string name="app_name">CatalystConsultancy</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="large_text">
 
     </string>
     <string name="action_settings">Settings</string>
 
+    <string name="Exam_prompt">Choose Exam given</string>
+
     <string name="stream_prompt">Choose a Stream</string>
 
-    <string-array name="stream_arrays">
+
+    <string name="Category_prompt">Choose a Stream</string>
+
+    <string name="title_activity_admin_data_insertion">AdminDataInsertion</string>
+
+    <string-array name="Exam_arrays">
         <item>MH-CET</item>
         <item>JEE-MAIN</item>
         <item>NEET</item>
         <item>JEE-ADVANCE</item>
+
+    </string-array>
+
+    <string-array name="stream_arrays">
+        <item>Computer</item>
+        <item>Mechanical</item>
+        <item>Electronics</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Chemical</item>
+
+    </string-array>
+    <string-array name="Category_arrays">
+        <item>Open</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>NT</item>
+        <item>VJ</item>
 
     </string-array>
 

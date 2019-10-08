@@ -5,107 +5,191 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+
     tools:context=".StreamSelect">
+
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="229dp"
-        android:layout_height="59dp"
-        android:entries="@array/stream_arrays"
+        android:layout_width="212dp"
+        android:layout_height="41dp"
+        android:background="#A0CFEC"
+        android:entries="@array/Exam_arrays"
+        android:prompt="@string/Exam_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
 
+    <Spinner
+        android:id="@+id/spinnerStream"
+        android:layout_width="223dp"
+        android:layout_height="44dp"
+        android:background="#A0CFEC"
+        android:entries="@array/stream_arrays"
         android:prompt="@string/stream_prompt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.154"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.443" />
+        app:layout_constraintVertical_bias="0.554" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="226dp"
+        android:layout_height="42dp"
+        android:background="#A0CFEC"
+        android:entries="@array/Category_arrays"
+        android:prompt="@string/Category_prompt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
 
     <Button
 
         android:id="@+id/btnSubmit"
-        android:layout_width="118dp"
-        android:layout_height="59dp"
+        android:layout_width="157dp"
+        android:layout_height="46dp"
         android:background="@drawable/capsule"
         android:text="Submit"
+        android:textColor="#ffff"
+        android:textColorHint="#8F302626"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.899" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="322dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:text="Enter your 12th Percentage "
+        android:layout_width="321dp"
+        android:layout_height="30dp"
+        android:text="Enter your 12th percentage "
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="271dp"
-        android:layout_height="50dp"
+        android:layout_width="205dp"
+        android:layout_height="28dp"
         android:text="Enter your score"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.461" />
-
-    <EditText
-        android:id="@+id/etdecimal_no"
-        android:layout_width="137dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="28dp"
-        android:ems="10"
-        android:hint="eg.83.25"
-        android:inputType="numberDecimal"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.295" />
+        app:layout_constraintVertical_bias="0.392" />
+
+    <EditText
+        android:id="@+id/et12marks"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="eg.87.56 "
+        android:inputType="textPersonName"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="63dp"
-        android:layout_height="54dp"
+        android:layout_width="58dp"
+        android:layout_height="47dp"
         android:text="%"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
 
     <EditText
         android:id="@+id/etcet_score"
-        android:layout_width="129dp"
-        android:layout_height="49dp"
+        android:layout_width="98dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="eg.157"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        android:inputType="textPersonName"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.769"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="145dp"
+        android:layout_height="27dp"
+        android:text="Select Exam"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="138dp"
+        android:layout_height="31dp"
+        android:text="Select Stream"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="132dp"
+        android:layout_height="34dp"
+        android:text="Select Category"
+        android:textColor="#111111"
+        android:textColorHint="#8F302626"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

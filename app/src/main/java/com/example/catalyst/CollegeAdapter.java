@@ -41,7 +41,7 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.ProductV
                 .into(holder.imageView);
 
         holder.textViewName.setText(college.getCollege_name());
-        holder.textViewCetScore.setText(college.getCollege_cet_score());
+       // holder.textViewCetScore.setText(college.getCollege_cet_score());
         holder.textViewLoc.setText(String.valueOf(college.getCollege_location()));
         holder.textViewWebsite.setText(String.valueOf(college.getCollege_website()));
         holder.textViewCode.setText(String.valueOf(college.getCollege_code()));
@@ -63,7 +63,7 @@ public class CollegeAdapter extends RecyclerView.Adapter<CollegeAdapter.ProductV
             super(itemView);
 
             textViewName = itemView.findViewById(R.id.textViewName);
-            textViewCetScore = itemView.findViewById(R.id.textViewCetScore);
+           // textViewCetScore = itemView.findViewById(R.id.textViewCetScore);
             textViewLoc = itemView.findViewById(R.id.textViewLoc);
             textViewWebsite = itemView.findViewById(R.id.textViewWebsite);
             textViewCode = itemView.findViewById(R.id.textViewCode);

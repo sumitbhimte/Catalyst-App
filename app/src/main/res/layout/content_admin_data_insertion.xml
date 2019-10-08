@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AdminDataInsertion"
+    tools:showIn="@layout/activity_admin_data_insertion">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/large_text" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="173dp"
+        android:layout_height="26dp"
+        android:text="Enter College Code"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <EditText
+        android:id="@+id/etCollegeCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="College Code"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="167dp"
+        android:layout_height="33dp"
+        android:text="Enter College Name"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <EditText
+        android:id="@+id/etCollegeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Collehe Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="201dp"
+        android:layout_height="44dp"
+        android:text="College URL"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <EditText
+        android:id="@+id/etCollegeWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="College URl"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:text="College Location"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <EditText
+        android:id="@+id/etCollegeLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="226dp"
+        android:layout_height="42dp"
+        android:background="#FFFFF0"
+        android:entries="@array/Category_arrays"
+        android:prompt="@string/Category_prompt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+</androidx.core.widget.NestedScrollView>
